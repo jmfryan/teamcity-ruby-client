@@ -97,7 +97,7 @@ describe 'Builds' do
       it 'should pin a build' do
         build_to_pin = @tc.builds.first
         comment = 'this will add a comment'
-        @tc.pin_build(build_to_pin.id, comment).should be_nil
+        @tc.pin_build(build_to_pin.id, comment).should be_empty
       end
     end
   end

@@ -286,7 +286,7 @@ describe 'BuildTypes' do
       it 'should delete a buildtype parameter' do
         param_to_delete = 'delete-buildtype-param'
         @tc.set_buildtype_parameter(@buildtype_id, param_to_delete, '')
-        @tc.delete_buildtype_parameter(@buildtype_id, 'delete-me').should be_nil
+        @tc.delete_buildtype_parameter(@buildtype_id, 'delete-me').should be_empty
       end
     end
 

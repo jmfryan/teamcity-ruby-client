@@ -140,7 +140,7 @@ describe 'Projects' do
         @tc.create_project(project_id)
         @tc.set_project_parameter(project_id, param_to_delete, 'delete-me')
         response = @tc.delete_project_parameter(project_id, param_to_delete)
-        response.should be_nil
+        response.should be_empty
       end
     end
   end
